@@ -18,6 +18,9 @@
 *.lock
 profile
 
+# VSCode project files
+.history
+
 
 ####
 # Xcode temporary files that should never be committed
