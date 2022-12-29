@@ -1,16 +1,16 @@
 # ACEView 
-[![Build Status](https://travis-ci.org/faceleg/ACEView.svg?branch=master)](https://travis-ci.org/faceleg/ACEView)
-[![Join the chat at https://gitter.im/faceleg/ACEView](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/faceleg/ACEView?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/chorpler/ACEView.svg?branch=master)](https://travis-ci.org/chorpler/ACEView)
+[![Join the chat at https://gitter.im/chorpler/ACEView](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/chorpler/ACEView?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Use the wonderful [ACE editor](http://ace.ajax.org/) in your Cocoa applications.
 
-![ACEView example](https://raw.github.com/faceleg/ACEView/master/Collateral/ace-example.jpg)
+![ACEView example](https://raw.github.com/chorpler/ACEView/master/Collateral/ace-example.jpg)
 
 For great justice.
 
 # Documentation
 
-[Full API documentation](http://faceleg.github.com/ACEView/index.html).
+[Full API documentation](http://chorpler.github.com/ACEView/index.html).
 
 # Usage
 
@@ -18,11 +18,11 @@ Using ACEView is about as easy as it gets. First add the ACEView framework to yo
 
 *note that ACEView has some dependencies - either use CocoaPods or run: `git submodule update --init --recursive` inside the folder you cloned ACEView into.
 
-![ACEView XIB](https://raw.github.com/faceleg/ACEView/master/Collateral/ace-xib.jpg)
+![ACEView XIB](https://raw.github.com/chorpler/ACEView/master/Collateral/ace-xib.jpg)
 
 Make sure you've got an IBOutlet in your view controller, and bind that bad girl:
 
-![ACEView XIB Binding](https://raw.github.com/faceleg/ACEView/master/Collateral/ace-xib-binding.jpg)
+![ACEView XIB Binding](https://raw.github.com/chorpler/ACEView/master/Collateral/ace-xib-binding.jpg)
 
 Now, you could do something like this:
 
@@ -48,7 +48,7 @@ Now, you could do something like this:
 - (void) applicationDidFinishLaunching:(NSNotification *)aNotification {
 
     // Note that you'll likely be using local text
-    [aceView setString:[NSString stringWithContentsOfURL:[NSURL URLWithString:@"https://github.com/faceleg/ACEView"] encoding:NSUTF8StringEncoding
+    [aceView setString:[NSString stringWithContentsOfURL:[NSURL URLWithString:@"https://github.com/chorpler/ACEView"] encoding:NSUTF8StringEncoding
                                                    error:nil]];
     [aceView setDelegate:self];
     [aceView setMode:ACEModeHTML];

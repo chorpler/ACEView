@@ -250,13 +250,25 @@ static NSArray *allowedSelectorNamesForJavaScript;
                                  bounds.size.width - (2 * padding), bounds.size.height - (2 * padding))];
 }
 
+#pragma mark -
+#pragma mark Text finder methods
+
 - (void) showFindInterface {
     [textFinder performAction:NSTextFinderActionShowFindInterface];
     [self resizeWebView];
 }
+
 - (void) showReplaceInterface {
     [textFinder performAction:NSTextFinderActionShowReplaceInterface];
     [self resizeWebView];
+}
+
+- (void) findNextMatch {
+    [textFinder performAction:NSTextFinderActionNextMatch];
+}
+
+- (void) findPreviousMatch {
+    [textFinder performAction:NSTextFinderActionPreviousMatch];
 }
 
 + (NSArray *) allowedSelectorNamesForJavaScript {
@@ -264,6 +276,8 @@ static NSArray *allowedSelectorNamesForJavaScript;
         allowedSelectorNamesForJavaScript = @[
             @"showFindInterface",
             @"showReplaceInterface",
+            @"findNextMatch",
+            @"findPreviousMatch",
             @"aceTextDidChange",
             @"printHTML:"
         ];

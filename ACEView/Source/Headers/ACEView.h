@@ -322,6 +322,22 @@ extern NSString *const ACETextDidEndEditingNotification;
  */
 - (void) setShowGutter:(BOOL)show;
 
+/** Open the find interface at the top of this ACEView.
+*/
+- (void) showFindInterface;
+
+/** Open the replace interface at the top of this ACEView.
+ */
+- (void) showReplaceInterface;
+
+/** Jump to the next match when using the Find interface.
+ */
+- (void) findNextMatch;
+
+/** Jump to the previous match when using the Find interface.
+ */
+- (void) findPreviousMatch;
+
 /** Returns the number of rows in the document.
  
  Uses [editor.getSession().getLength()]

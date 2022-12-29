@@ -20,7 +20,7 @@
     NSString *htmlFilePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"HTML5" ofType:@"html"];
     NSString *html = [NSString stringWithContentsOfFile:htmlFilePath encoding:NSUTF8StringEncoding error:nil];
     [aceView setString:html];
-//    [aceView setString:[NSString stringWithContentsOfURL:[NSURL URLWithString:@"https://github.com/faceleg/ACEView"] encoding:NSUTF8StringEncoding
+//    [aceView setString:[NSString stringWithContentsOfURL:[NSURL URLWithString:@"https://github.com/chorpler/ACEView"] encoding:NSUTF8StringEncoding
 //                                                   error:nil]];
     [aceView setDelegate:self];
     [aceView setMode:ACEModeHTML];

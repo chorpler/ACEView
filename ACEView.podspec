@@ -5,14 +5,14 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                     The ACEView framework aims to allow you to use the ACE source code editor in your Cocoa applications, as if it were a native control.
                    DESC
-  s.homepage     = "https://github.com/faceleg/ACEView"
+  s.homepage     = "https://github.com/chorpler/ACEView"
   s.license      = {
     :type => 'BSD',
     :file => 'LICENSE'
   }
   s.author       = { "Michael Robinson" => "mike@pagesofinterest.net" }
   s.source       = {
-    :git => 'https://github.com/faceleg/ACEView.git',
+    :git => 'https://github.com/chorpler/ACEView.git',
     :tag => s.version.to_s,
     :submodules => true
   }

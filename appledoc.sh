@@ -3,9 +3,9 @@
 --project-company "Michael Robinson" \
 --company-id "com.codeofinterest" \
 --docset-atom-filename "ACEView.atom" \
---docset-feed-url "http://faceleg.github.com/ACEView/%DOCSETATOMFILENAME" \
---docset-package-url "http://faceleg.github.com/ACEView/%DOCSETPACKAGEFILENAME" \
---docset-fallback-url "http://faceleg.github.com/ACEView/" \
+--docset-feed-url "http://chorpler.github.com/ACEView/%DOCSETATOMFILENAME" \
+--docset-package-url "http://chorpler.github.com/ACEView/%DOCSETPACKAGEFILENAME" \
+--docset-fallback-url "http://chorpler.github.com/ACEView/" \
 --output "~/help" \
 --publish-docset \
 --logformat xcode \
